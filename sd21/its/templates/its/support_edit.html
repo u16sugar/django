@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% block title %}対応の編集{% endblock title %}
+
+{% block content %}
+    <h3 class="page-header">対応の編集</h3>
+    {% if support_id %}
+    <form action="{% url 'its:support_mod' incident_id=incident_id support_id=support_id %}" method="post" class="form-horizontal" role="form">
+    {% else %}
+    <form action="{% url 'its:support_add' incident_id=incident_id %}" method="post" class="form-horizontal" role="form">
+    {% endif %}
+      {% csrf_token %}
+      {{ form|bootstrap_horizontal }}
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">送信</button>
+        </div>
+      </div>
+    </form>
+    <a href="{% url 'its:support_list' incident_id=incident_id %}" class="btn btn-default btn-sm">戻る</a>
+{% endblock content %}

@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//mybook/cms/admin.py=utf-8
+encoding//mybook/cms/models.py=utf-8
+encoding//sd21/its/forms.py=utf-8
+encoding//sd21/its/migrations/0002_auto_20141123_1609.py=utf-8
+encoding//sd21/its/migrations/0003_auto_20141123_1625.py=utf-8
+encoding//sd21/its/migrations/0004_incident_status.py=utf-8
+encoding//sd21/its/models.py=utf-8
+encoding//sd21/its/urls.py=utf-8
+encoding//sd21/its/views.py=utf-8
