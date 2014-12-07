@@ -23,4 +23,4 @@ Overview
 
 ## Author
 
-[tcnksm](https://github.com/u16sugar)
+[u16sugar](https://github.com/u16sugar)
